@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import image from '../../assets/sazzad.png'
 import { Link } from 'react-router-dom';
 import { FaFile, FaProjectDiagram } from 'react-icons/fa';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Skills from '../../Components/Skills';
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div>
             <Helmet>
@@ -20,13 +25,20 @@ const Home = () => {
                             <br />
                             Sazzad Hossain</h1>
                         <h1 className='text-5xl font-bold mt-4 '>A Front End Developer</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6">I am an experienced React JS developer with knowledge of HTML, CSS, Bootstrap, Tailwind, and Firebase. With many years of expertise designing and constructing aesthetically beautiful websites.
+                        </p>
                         <Link to='' className="btn bg-slate-700 text-white mx-1"><FaProjectDiagram />Projects</Link>
                         <Link to='' className="btn bg-slate-700 text-white mx-1"><FaFile />Resume</Link>
                     </div>
                 </div>
             </div>
             {/* about section  */}
+            {/* skills */}
+            <div data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
+
+                <Skills ></Skills>
+            </div>
+            {/* skills */}
         </div>
     );
 };

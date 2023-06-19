@@ -22,10 +22,10 @@ const Navbar = () => {
 
     const navMenu = <>
         <li><Link to='/'>Home</Link></li>
-        <li><a>Projects</a></li>
+        <li><Link to='/projects'>Projects</Link></li>
         <li><Link to='/about'>About Me</Link></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+        <li><Link to='/blogs'>Blogs</Link></li>
+        <li><Link to='/contact'>Contact Us</Link></li>
 
     </>
     return (
