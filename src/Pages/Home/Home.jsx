@@ -33,9 +33,16 @@ const Home = () => {
                 </div>
             </div>
             {/* about section  */}
+            <div className="divider"></div>
+
+            <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-justify border py-8 px-5 border-2 rounded-lg bg-base-200'>
+                <h1 className='text-4xl uppercase font-bold text-center'>---About---</h1>
+                <div className="divider"></div>
+                <p className=''>I am a skilled developer fluent in the languages of React, Express, Node.js, MongoDB, and Firebase. With my expertise, I bring web applications to life, creating digital marvels that leave a lasting impression. <br /> I thrive in this digital arena, where invention abounds. I am committed to creating outstanding digital solutions that push limits and surpass expectations by combining my love for constructing excellent user experiences with my expertise of cutting-edge technologies.I aspire to design beautiful and scalable solutions that smoothly connect front-end and back-end technologies with every line of code I write. My knowledge of React allows me to create visually appealing user interfaces, delivering a seamless and intuitive experience for any user that interacts with my projects.
+                </p>
+            </div>
             {/* skills */}
             <div data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
-
                 <Skills ></Skills>
             </div>
             {/* skills */}
