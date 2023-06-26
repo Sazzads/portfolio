@@ -28,6 +28,41 @@ const Contact = () => {
                     <Link to="https://www.kaggle.com/sazzadhossains" className="btn bg-blue-600 text-white mx-1" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"><FaKaggle />Kaggle</Link>
                 </div>
             </div>
+
+            <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='my-5 py-5 bg-base-200 text-center'>
+            <h1 className='my-4 text-4xl uppercase font-bold '>---Contact Information---</h1>
+
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='max-w-screen-sm mx-auto border border-black px-5 py-10 bg-slate-50'>
+                    <div className="chat chat-start">
+                        <div className="chat-bubble">Mobile No: </div>
+                    </div>
+                    <div className="chat chat-end">
+                        <div className="chat-bubble">+8801733439812</div>
+                    </div>
+
+                    <div className="chat chat-start">
+                        <div className="chat-bubble">E-mail :</div>
+                    </div>
+                    <div className="chat chat-end">
+                        <div className="chat-bubble">sazzadtk@gmail.com</div>
+                    </div>
+
+                    <div className="chat chat-start">
+                        <div className="chat-bubble">Present Address: </div>
+                    </div>
+                    <div className="chat chat-end">
+                        <div className="chat-bubble">Poschim Akur Takur Para <br />Tangail, Dhaka, Bangladesh </div>
+                    </div>
+
+                    <div className="chat chat-start">
+                        <div className="chat-bubble">NID No:</div>
+                    </div>
+                    <div className="chat chat-end">
+                        <div className="chat-bubble">9158145152</div>
+                    </div>
+                </div>
+
+            </div>
             <ContactForm></ContactForm>
 
 

@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+
 import { Helmet } from 'react-helmet-async';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import React, { useRef, useState, useEffect } from "react";
+import Project1 from './Project1';
 
 const Projects = () => {
     useEffect(() => {
@@ -12,6 +14,11 @@ const Projects = () => {
             <Helmet>
                 <title>Sazzad || Projects</title>
             </Helmet>
+
+
+            {/* card */}
+            <Project1></Project1>
+
         </>
     );
 };

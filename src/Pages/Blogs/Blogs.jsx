@@ -1,17 +1,24 @@
-import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import React, { useEffect } from 'react';
+// import { Helmet } from 'react-helmet-async';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+
+
+
 
 const Blogs = () => {
-    useEffect(() => {
-        AOS.init();
-    }, [])
+    // useEffect(() => {
+    //     AOS.init();
+    // }, [])
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <title>Sazzad || Blogs</title>
-            </Helmet>
+            </Helmet> */}
+            
+      
+   
 
         </>
     );
