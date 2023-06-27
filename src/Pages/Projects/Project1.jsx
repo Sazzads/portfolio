@@ -41,8 +41,6 @@ const Project1 = () => {
                                 <li>&nbsp;&#8658; live link: <a className='text-blue-600 font-bold' href="https://work-12-ad843.web.app/">Sports club</a> || GitHub link: <a className='text-blue-600 font-bold' href="https://github.com/Sazzads/sports_club_server">server </a> || <a className='text-blue-600 font-bold' href="https://github.com/Sazzads/sports_club_client">client </a></li>
                                 <li>&nbsp;&#8658; Admin Email: admin1@mail.com Admin  password: Admin@</li>
                                 <li><span className='font-bold'>Technologies:</span> <br /> React.js | Tailwind CSS | Daisy UI | Express.js | Mongo Db | Firebase auth | axios | jsonwebtoken</li>
-
-
                             </ul>
 
                         </div>
@@ -66,7 +64,7 @@ const Project1 = () => {
                                     modules={[EffectCoverflow, Pagination]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide className='overflow-scroll'>
+                                    <SwiperSlide className='overflow-scroll '>
                                         <img src={pic} />
                                     </SwiperSlide>
                                     <SwiperSlide>
