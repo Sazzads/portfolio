@@ -52,9 +52,9 @@ const Home = () => {
                 <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className='text-center'>
                         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline uppercase ">
-                            ---Skills---
+                            ---Projects---
                         </p>
-                        <p className="py-6 ">These are the technologies I have Skilled</p>
+                        <p className="py-6 ">These are my some projects </p>
                     </div>
                 </div>
                 <div data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
