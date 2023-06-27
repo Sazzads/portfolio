@@ -28,6 +28,10 @@ const Navbar = () => {
         <li><Link to='/contact'>Contact</Link></li>
 
     </>
+
+const handleDownload = () => {
+    window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download","_parent")
+}
     return (
         <div className="navbar bg-base-100 mb-2">
             <div className="navbar-start ">
@@ -47,7 +51,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn-sm lg:btn mr-1">Resume</a>
+                <a onClick={handleDownload} className="btn-sm lg:btn mr-1">Resume</a>
                 <div className='hidden md:flex'>
                     <label className="swap swap-rotate ">
 
