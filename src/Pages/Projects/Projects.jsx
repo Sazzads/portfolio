@@ -17,13 +17,18 @@ const Projects = () => {
             <Helmet>
                 <title>Sazzad || Projects</title>
             </Helmet>
-
+ 
 
             {/* card */}
-            <Project1></Project1>
+           
+
+           <div className='projects1'>
+           <Project1></Project1>
+           </div>
             <Project2></Project2>
             <Project3></Project3>
             <Project4></Project4>
+          
 
         </>
     );

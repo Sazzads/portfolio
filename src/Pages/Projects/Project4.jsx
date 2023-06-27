@@ -15,10 +15,14 @@ import "swiper/css/pagination";
 import "./styles.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
+import { Helmet } from 'react-helmet-async';
 
 const Project4 = () => {
     return (
         <div>
+            <Helmet>
+                <title>Sazzad || Project 4</title>
+            </Helmet>
             <div className="  bg-base-200 p-4">
                 <h2 className="text-4xl font-bold uppercase text-center mt-4">Dream Job Center</h2>
                 <div className="hero hero-content flex-col lg:flex-row-reverse mt-5">

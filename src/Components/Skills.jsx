@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -8,7 +8,13 @@ import bootstrap from "../assets/bootstrap.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import mongodb from "../assets/mongodb.png";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Skills = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
         const technology = [
             {
                 id: 1,
@@ -71,7 +77,7 @@ const Skills = () => {
             <div>
                 <div
                     name="experience"
-                    className=" w-full  h-full pt-40"
+                    className=" w-full  h-full pt-10"
                 >
                     <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                         <div className='text-center'>
@@ -87,7 +93,7 @@ const Skills = () => {
                                     key={id}
                                     className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
                                 >
-                                    <img src={src} alt="" className="w-20 mx-auto" />
+                                    <img  data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" src={src} alt="" className="w-20 mx-auto" />
                                     <p className="mt-4">{title}</p>
                                 </div>
                             ))}
