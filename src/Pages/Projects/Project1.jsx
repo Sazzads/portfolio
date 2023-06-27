@@ -34,7 +34,7 @@ const Project1 = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl font-bold uppercase">Features : </h1>
                         <div className="py-6">
-                            <ul className='md:space-y-2 '>
+                            <ul className='md:space-y-2 text-left'>
                                 <li className='font-semibold text-lg'>An online based sports learning platform-</li>
                                 <li>&nbsp;&#8658; Website has three different role,student, instructors and admin. </li>
                                 <li>&nbsp;&#8658; Admin can make instructor/admin and approved courses</li>

@@ -29,7 +29,7 @@ const Project4 = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl font-bold uppercase">Features : </h1>
                         <div className="py-6">
-                            <ul className='md:space-y-2 '>
+                            <ul className='md:space-y-2 text-left'>
                                 <li className='font-semibold text-lg'>A Job Details Related Responsive website-</li>
                                 <li>&nbsp;&#8658; You can see remote and onside job by category on applied jobs</li>
                                 <li>&nbsp;&#8658; react chart hook is using on blog page</li>

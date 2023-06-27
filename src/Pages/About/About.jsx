@@ -18,14 +18,14 @@ const About = () => {
             <Helmet>
                 <title>Sazzad || About</title>
             </Helmet>
-            <div className="hero py-8 bg-base-200 px-2">
-                <div className="hero-content flex-col lg:flex-row-reverse ">
-                    <img data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" src={image} className="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero py-8 bg-base-200 px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
+                <div className="flex justify-center flex-col lg:flex-row-reverse ">
+                    <img  src={image} className="max-w-sm rounded-lg shadow-2xl" />
                     <div data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-left'>
-                        <h1 className="text-5xl font-bold ">Hello! I'm,
+                        <h1 className="text-4xl md:text-5xl  font-bold ">Hello! I'm,
                             <br />
                             Sazzad Hossain</h1>
-                        <h1 className='text-5xl font-bold mt-4 '>A Front End Developer</h1>
+                        <h1 className='text-4xl md:text-5xl font-bold mt-4 '>A Front End Developer</h1>
                         <p className="py-6">I am an experienced React JS developer with knowledge of HTML, CSS, Bootstrap, Tailwind, and Firebase. With many years of expertise designing and constructing aesthetically beautiful websites.
                         </p>
                         <Link to='' className="btn bg-slate-700 text-white mx-1"><FaProjectDiagram />Projects</Link>

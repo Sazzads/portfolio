@@ -34,7 +34,7 @@ const Project2 = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl font-bold uppercase">Features : </h1>
                         <div className="py-6">
-                            <ul className='md:space-y-2 '>
+                            <ul className='md:space-y-2 text-left'>
                                 <li className='font-semibold text-lg'>The ultimate Toys store-</li>
                                 <li>&nbsp;&#8658;   Authentic user can Add, Delete and update their products</li>
                                 <li>&nbsp;&#8658; User can login and registration using google Authentication</li>

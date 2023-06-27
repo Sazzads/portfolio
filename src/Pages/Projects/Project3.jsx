@@ -30,7 +30,7 @@ const Project3 = () => {
                     <div className="text-center lg:text-left">
                         <h1 className="text-3xl font-bold uppercase">Features : </h1>
                         <div className="py-6">
-                            <ul className='md:space-y-2 '>
+                            <ul className='md:space-y-2 text-left'>
                                 <li className='font-semibold text-lg'>A Chef Related Website-</li>
                                 <li>&nbsp;&#8658; User can use this full website after login or registration</li>
                                 <li>&nbsp;&#8658; they also use email and password or google/GitHub authentication</li>
