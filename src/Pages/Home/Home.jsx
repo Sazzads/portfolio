@@ -21,7 +21,7 @@ const Home = () => {
             {/* about section  */}
             <div className="hero py-8 bg-base-200 px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
                 <div className="flex justify-center flex-col lg:flex-row-reverse ">
-                    <img  src={image} className="max-w-sm rounded-lg shadow-2xl" />
+                    <img  src={image} className="md:max-w-sm rounded-lg shadow-2xl" />
                     <div data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-left'>
                         <h1 className="text-4xl md:text-5xl  font-bold ">Hello! I'm,
                             <br />
