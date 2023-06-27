@@ -28,7 +28,7 @@ const About = () => {
                         <h1 className='text-4xl md:text-5xl font-bold mt-4 '>A Front End Developer</h1>
                         <p className="py-6">I am an experienced React JS developer with knowledge of HTML, CSS, Bootstrap, Tailwind, and Firebase. With many years of expertise designing and constructing aesthetically beautiful websites.
                         </p>
-                        <Link to='' className="btn bg-slate-700 text-white mx-1"><FaProjectDiagram />Projects</Link>
+                        <Link to='/projects' className="btn bg-slate-700 text-white mx-1"><FaProjectDiagram />Projects</Link>
                         <Link to='' className="btn bg-slate-700 text-white mx-1"><FaFile />Resume</Link>
                     </div>
                 </div>
