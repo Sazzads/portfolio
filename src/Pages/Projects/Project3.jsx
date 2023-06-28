@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import pic from '../../assets/work-10/fullss.png'
 import pic1 from '../../assets/work-10/ss1.png'
 import pic2 from '../../assets/work-10/ss2.png'
 import pic3 from '../../assets/work-10/ss3.png'
 import pic4 from '../../assets/work-10/ss4.png'
-
 
 
 // Import Swiper styles
@@ -15,12 +14,17 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Helmet } from 'react-helmet-async';
 
+
 const Project3 = () => {
+    const progressContent = useRef(null);
+    const onAutoplayTimeLeft = (s, time, progress) => {
+        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
     return (
-        <div>
+        <div className='my-2'>
             <Helmet>
                 <title>Sazzad || Project 3</title>
             </Helmet>
@@ -47,29 +51,29 @@ const Project3 = () => {
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="">
                             <div>
-                                <Swiper
-                                    effect={"coverflow"}
-                                    grabCursor={true}
+                            <Swiper
+                                    spaceBetween={30}
                                     centeredSlides={true}
-                                    slidesPerView={"auto"}
-                                    coverflowEffect={{
-                                        rotate: 50,
-                                        stretch: 0,
-                                        depth: 100,
-                                        modifier: 1,
-                                        slideShadows: true,
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
                                     }}
-                                    pagination={true}
-                                    modules={[EffectCoverflow, Pagination]}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    navigation={true}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    onAutoplayTimeLeft={onAutoplayTimeLeft}
                                     className="mySwiper"
                                 >
                                     <SwiperSlide className='overflow-scroll '>
+
                                         <img src={pic} />
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <img src={pic1} />
                                     </SwiperSlide>
-                                    <SwiperSlide className='overflow-scroll '>
+                                    <SwiperSlide>
                                         <img src={pic2} />
                                     </SwiperSlide>
                                     <SwiperSlide>
@@ -78,6 +82,12 @@ const Project3 = () => {
                                     <SwiperSlide>
                                         <img src={pic4} />
                                     </SwiperSlide>
+                               
+
+                                    <div className="autoplay-progress" slot="container-end">
+                                        
+                                        <span ref={progressContent}></span>
+                                    </div>
                                 </Swiper>
                             </div>
                         </div>

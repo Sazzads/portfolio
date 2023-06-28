@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import pic from '../../assets/work-11/fullss.png'
 import pic1 from '../../assets/work-11/ss1.png'
 import pic2 from '../../assets/work-11/ss2.png'
@@ -11,7 +12,6 @@ import pic7 from '../../assets/work-11/ss7.png'
 import pic8 from '../../assets/work-11/ss9.png'
 
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -19,12 +19,16 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Helmet } from 'react-helmet-async';
 
 const Project2 = () => {
+    const progressContent = useRef(null);
+    const onAutoplayTimeLeft = (s, time, progress) => {
+        progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    };
     return (
-        <div>
+        <div className='my-2'>
             <Helmet>
                 <title>Sazzad || Project 2</title>
             </Helmet>
@@ -52,28 +56,28 @@ const Project2 = () => {
                         <div className="">
                             <div>
                                 <Swiper
-                                    effect={"coverflow"}
-                                    grabCursor={true}
+                                    spaceBetween={30}
                                     centeredSlides={true}
-                                    slidesPerView={"auto"}
-                                    coverflowEffect={{
-                                        rotate: 50,
-                                        stretch: 0,
-                                        depth: 100,
-                                        modifier: 1,
-                                        slideShadows: true,
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
                                     }}
-                                    pagination={true}
-                                    modules={[EffectCoverflow, Pagination]}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    navigation={true}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    onAutoplayTimeLeft={onAutoplayTimeLeft}
                                     className="mySwiper"
                                 >
                                     <SwiperSlide className='overflow-scroll '>
+
                                         <img src={pic} />
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <img src={pic1} />
                                     </SwiperSlide>
-                                    <SwiperSlide className='overflow-scroll '>
+                                    <SwiperSlide>
                                         <img src={pic2} />
                                     </SwiperSlide>
                                     <SwiperSlide>
@@ -94,6 +98,11 @@ const Project2 = () => {
                                     <SwiperSlide>
                                         <img src={pic8} />
                                     </SwiperSlide>
+
+                                    <div className="autoplay-progress" slot="container-end">
+                                        
+                                        <span ref={progressContent}></span>
+                                    </div>
                                 </Swiper>
                             </div>
                         </div>

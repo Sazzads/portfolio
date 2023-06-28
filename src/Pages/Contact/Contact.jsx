@@ -53,13 +53,6 @@ const Contact = () => {
                     <div className="chat chat-end">
                         <div className="chat-bubble">Poschim Akur Takur Para <br />Tangail, Dhaka, Bangladesh </div>
                     </div>
-
-                    <div className="chat chat-start">
-                        <div className="chat-bubble">NID No:</div>
-                    </div>
-                    <div className="chat chat-end">
-                        <div className="chat-bubble">9158145152</div>
-                    </div>
                 </div>
 
             </div>
