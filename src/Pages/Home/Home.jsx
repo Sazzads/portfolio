@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Skills from '../../Components/Skills';
 import HomeProjects from './HomeProjects';
+import Blogs from '../Blogs/Blogs';
 
 
 
@@ -15,7 +16,7 @@ const Home = () => {
         AOS.init();
     }, [])
     const handleDownload = () => {
-        window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download","_parent")
+        window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download", "_parent")
     }
     return (
         <div className=''>
@@ -52,6 +53,8 @@ const Home = () => {
                 <Skills ></Skills>
             </div>
             {/* skills */}
+
+            {/* projects */}
             <div className=" w-full  h-full pt-10">
                 <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className='text-center'>
@@ -61,8 +64,15 @@ const Home = () => {
                         <p className="py-6 ">These are my some projects </p>
                     </div>
                 </div>
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
                     <HomeProjects></HomeProjects>
+                </div>
+            </div>
+            {/* projects */}
+            <div className=" w-full  h-full pt-10">
+                
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
+                    <Blogs></Blogs>
                 </div>
             </div>
 
