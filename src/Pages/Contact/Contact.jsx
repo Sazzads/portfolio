@@ -15,10 +15,10 @@ const Contact = () => {
             <Helmet>
                 <title>Sazzad || Contact</title>
             </Helmet>
-            <div className='my-5 py-5 bg-base-200'>
+            <div className='my-5 py-5 '>
             </div>
             <div className='text-center'>
-                <div className='my-5 py-5 bg-base-200'>
+                <div className='my-5 py-5 '>
                     <h1 className='my-4 text-4xl uppercase font-bold '>---Social Links---</h1>
                     <Link to='https://www.facebook.com/sazzadz' className="btn bg-blue-500 text-white mx-1" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"><FaFacebookF />Facebook</Link>
                     <Link to='https://github.com/Sazzads' className="btn bg-slate-700 text-white mx-1" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"><FaGithub />github</Link>
@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='my-5 py-5 bg-base-200 text-center'>
+            <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='my-5 py-5 text-center'>
             <h1 className='my-4 text-4xl uppercase font-bold '>---Contact Information---</h1>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='max-w-screen-sm mx-auto border border-black px-5 py-10 bg-slate-50'>

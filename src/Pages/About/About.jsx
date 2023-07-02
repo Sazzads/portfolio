@@ -18,7 +18,7 @@ const About = () => {
             <Helmet>
                 <title>Sazzad || About</title>
             </Helmet>
-            <div className="hero py-8 bg-base-200 px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
+            <div className="hero py-8  px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
                 <div className="flex justify-center flex-col lg:flex-row-reverse ">
                     <img  src={image} className="md:max-w-sm rounded-lg shadow-2xl" />
                     <div data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-left'>
@@ -34,14 +34,14 @@ const About = () => {
                 </div>
             </div>
             <div className="divider"></div>
-            <div className='text-justify border py-8 px-5 border-2 rounded-lg bg-base-200'>
+            <div className='text-justify border py-8 px-5 border-2 rounded-lg '>
                 <h1 className='text-4xl uppercase font-bold text-center'>---About---</h1>
                 <div className="divider"></div>
                 <p className=''>I am a skilled developer fluent in the languages of React, Express, Node.js, MongoDB, and Firebase. With my expertise, I bring web applications to life, creating digital marvels that leave a lasting impression. <br /> I thrive in this digital arena, where invention abounds. I am committed to creating outstanding digital solutions that push limits and surpass expectations by combining my love for constructing excellent user experiences with my expertise of cutting-edge technologies.I aspire to design beautiful and scalable solutions that smoothly connect front-end and back-end technologies with every line of code I write. My knowledge of React allows me to create visually appealing user interfaces, delivering a seamless and intuitive experience for any user that interacts with my projects.
                 </p>
             </div>
             <div className="divider"></div>
-            <div className='my-5 bg-base-200 text-center'>
+            <div className='my-5  text-center'>
                 <h1 className='py-4 text-4xl uppercase font-bold '>---Education---</h1>
                 <div className="mockup-window border border-base-300">
                     <div className=" px-4 py-16 border-t border-base-300" data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
@@ -69,7 +69,7 @@ const About = () => {
 
             </div>
             {/* social links  */}
-            <div className='my-5 py-5 bg-base-200 text-center'>
+            <div className='my-5 py-5  text-center'>
                 <h1 className='my-4 text-4xl uppercase font-bold '>---Social Links---</h1>
                 <Link to='https://www.facebook.com/sazzadz' className="btn bg-blue-500 text-white mx-1" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"><FaFacebookF />Facebook</Link>
                 <Link to='https://github.com/Sazzads' className="btn bg-slate-700 text-white mx-1" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"><FaGithub />github</Link>

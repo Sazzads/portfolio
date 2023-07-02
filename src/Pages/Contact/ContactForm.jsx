@@ -43,7 +43,7 @@ const ContactForm = () => {
     };
     return (
         <div>
-            <div className="hero  bg-base-200" data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
+            <div className="hero  " data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
                 <div className="hero-content flex-col">
                     <div className="text-center">
                         <h1 className="text-4xl uppercase font-bold ">Contact Me!</h1>

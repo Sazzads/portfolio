@@ -8,6 +8,8 @@ import 'aos/dist/aos.css';
 import Skills from '../../Components/Skills';
 import HomeProjects from './HomeProjects';
 import Blogs from '../Blogs/Blogs';
+import ContactForm from '../Contact/ContactForm';
+import Swal from 'sweetalert2';
 
 
 
@@ -16,7 +18,19 @@ const Home = () => {
         AOS.init();
     }, [])
     const handleDownload = () => {
-        window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download", "_parent")
+        Swal.fire({
+            title: 'Do you want to download Sazzads Resume?',
+            icon: 'info',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Download'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download", "_parent")
+
+            }
+          })
     }
     return (
         <div className=''>
@@ -24,7 +38,7 @@ const Home = () => {
                 <title>Sazzad || Home</title>
             </Helmet>
             {/* about section  */}
-            <div className="hero py-8 bg-base-200 px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
+            <div className="hero py-8  px-2 shadow-lg hover:scale-105 duration-500 px-8 ">
                 <div className="flex justify-center flex-col lg:flex-row-reverse ">
                     <img src={image} className="md:max-w-sm rounded-lg shadow-2xl" />
                     <div data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-left'>
@@ -42,7 +56,7 @@ const Home = () => {
             {/* about section  */}
             <div className="divider"></div>
 
-            <div className='text-justify border py-8 px-5 border-2 rounded-lg bg-base-200 shadow-lg hover:scale-105 duration-500'>
+            <div className='text-justify border py-8 px-5 border-2 rounded-lg  shadow-lg hover:scale-105 duration-500'>
                 <h1 data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-4xl uppercase font-bold text-center'>---About---</h1>
                 <div className="divider"></div>
                 <p data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>I am a skilled developer fluent in the languages of React, Express, Node.js, MongoDB, and Firebase. With my expertise, I bring web applications to life, creating digital marvels that leave a lasting impression. <br /> I thrive in this digital arena, where invention abounds. I am committed to creating outstanding digital solutions that push limits and surpass expectations by combining my love for constructing excellent user experiences with my expertise of cutting-edge technologies.I aspire to design beautiful and scalable solutions that smoothly connect front-end and back-end technologies with every line of code I write. My knowledge of React allows me to create visually appealing user interfaces, delivering a seamless and intuitive experience for any user that interacts with my projects.
@@ -74,6 +88,10 @@ const Home = () => {
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
                     <Blogs></Blogs>
                 </div>
+            </div>
+
+            <div className='my-5'>
+                <ContactForm></ContactForm>
             </div>
 
 

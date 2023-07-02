@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
@@ -30,7 +31,19 @@ const Navbar = () => {
     </>
 
 const handleDownload = () => {
-    window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download","_parent")
+    Swal.fire({
+        title: 'Do you want to download Sazzads Resume?',
+        icon: 'info',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Download'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            window.open("https://drive.google.com/u/1/uc?id=1phbkUGOpVBN8nCthcqDvsuxFA2z6AwFd&export=download", "_parent")
+
+        }
+      })
 }
     return (
         <div className="navbar bg-base-100 mb-2">
