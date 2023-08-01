@@ -43,13 +43,15 @@ const ContactForm = () => {
     };
     return (
         <div>
-            <div className="hero  " data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
+            <div className="hero  "   >
                 <div className="hero-content flex-col">
                     <div className="text-center">
-                        <h1 className="text-4xl uppercase font-bold ">Contact Me!</h1>
+                        <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline uppercase ">
+                        --Contact Me!--
+                            </p>
                         <p className="py-6">Please do not hesitate to contact me for any reason.</p>
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-500 shadow-black mb-10" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out">
+                    <div className="card flex-shrink-0 w-full max-w-sm border flex flex-col items-center shadow-lg hover:scale-105 duration-500 shadow-gray-500 hover:bg-gray-100 rounded-md"  >
                         <form ref={form} onSubmit={sendEmail} className="card-body">
                             <div className="form-control">
                                 <input onChange={handleInputChange} name="from_name" type="text" placeholder="Your Name" className="input input-bordered textarea" />

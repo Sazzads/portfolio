@@ -19,7 +19,7 @@ const Blogs = () => {
 
             <div>
                 <div>
-                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
+                    <div data-aos="fade-down"  className=''>
                         <div className='text-center'>
                             <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline uppercase ">
                                 ---Blogs---
@@ -32,10 +32,10 @@ const Blogs = () => {
                 <div className="join join-vertical w-full">
                     <div className="collapse collapse-arrow join-item border border-base-300">
                         <input type="radio" name="my-accordion-4" defaultChecked={true}/>
-                        <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className="collapse-title text-xl font-medium">
+                        <div  className="collapse-title text-xl font-medium">
                             How to learn MERN stack web development in six months
                         </div>
-                        <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className="collapse-content space-y-2">
+                        <div  className="collapse-content space-y-2">
                             <p>Are you interested in becoming a web developer and want to learn how to build modern, dynamic web applications? Look no further than the MERN stack! MERN stands for MongoDB, Express.js, React.js, and Node.js, which are four powerful technologies that work together to create full-stack web applications. Whether you're a beginner or an experienced developer looking to expand your skill set, learning the MERN stack can open up a world of possibilities. In this guide, we'll walk you through the steps to learn MERN stack web development in a simple and straightforward manner. So, let's dive in and embark on an exciting journey into the world of MERN stack development!</p>
                             <p>You hav to follow just few steps.</p>
                             <ul className='space-y-1 font-semibold'>
@@ -76,7 +76,7 @@ const Blogs = () => {
                     <div className="collapse collapse-arrow join-item border border-base-300">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                            Marn stack or full stack?
+                            Mern stack or full stack?
                         </div>
                         <div className="collapse-content space-y-2">
                             <p>The MEAN stack and the full stack are two different concepts in web development. Let's break down the differences between them:</p>

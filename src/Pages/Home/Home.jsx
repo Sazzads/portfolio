@@ -57,7 +57,7 @@ const Home = () => {
             <div className="divider"></div>
 
             <div className='text-justify border py-8 px-5 border-2 rounded-lg  shadow-lg hover:scale-105 duration-500'>
-                <h1 data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-4xl uppercase font-bold text-center'>---About---</h1>
+                <h1 data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='text-4xl uppercase font-bold text-center'>---About---</h1>
                 <div className="divider"></div>
                 <p data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>I am a skilled developer fluent in the languages of React, Express, Node.js, MongoDB, and Firebase. With my expertise, I bring web applications to life, creating digital marvels that leave a lasting impression. <br /> I thrive in this digital arena, where invention abounds. I am committed to creating outstanding digital solutions that push limits and surpass expectations by combining my love for constructing excellent user experiences with my expertise of cutting-edge technologies.I aspire to design beautiful and scalable solutions that smoothly connect front-end and back-end technologies with every line of code I write. My knowledge of React allows me to create visually appealing user interfaces, delivering a seamless and intuitive experience for any user that interacts with my projects.
                 </p>
@@ -69,7 +69,7 @@ const Home = () => {
             {/* skills */}
 
             {/* projects */}
-            <div className=" w-full  h-full pt-10">
+            <div data-aos="flip-left" className=" w-full  h-full pt-10">
                 <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                     <div className='text-center'>
                         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline uppercase ">
@@ -78,19 +78,19 @@ const Home = () => {
                         <p className="py-6 ">These are my some projects </p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
+                <div  className=''>
                     <HomeProjects></HomeProjects>
                 </div>
             </div>
             {/* projects */}
             <div className=" w-full  h-full pt-10">
                 
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className=''>
+                <div data-aos="flip-right" className=''>
                     <Blogs></Blogs>
                 </div>
             </div>
 
-            <div className='my-5'>
+            <div data-aos="flip-left" className='my-5'>
                 <ContactForm></ContactForm>
             </div>
 

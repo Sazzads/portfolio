@@ -16,7 +16,7 @@ const HomeProjects = () => {
             <div className=' grid grid-cols-1 md:grid-cols-2 justify-center '>
 
                 <div className="border p-10 m-10  flex flex-col items-center shadow-lg hover:scale-105 duration-500 shadow-gray-500 hover:bg-gray-100 rounded-md">
-                    <div  data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='border w-50 mx-auto rounded-md'>
+                    <div  data-aos="flip-left"  className='border w-50 mx-auto rounded-md'>
                         <img src={pic1} alt="" />
                     </div>
                     <h2 className='text-xl uppercase my-1 font-semibold'>storts club</h2>
@@ -25,7 +25,7 @@ const HomeProjects = () => {
                 </div>
 
                 <div className="border p-10 m-10  flex flex-col items-center shadow-lg hover:scale-105 duration-500 shadow-gray-500 hover:bg-gray-100 rounded-md">
-                    <div  data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='border w-50 mx-auto rounded-md'>
+                    <div  data-aos="flip-left"  className='border w-50 mx-auto rounded-md'>
                         <img src={pic2} alt="" />
                     </div>
                     <h2 className='text-xl uppercase my-1 font-semibold'>KID CAR STORE</h2>
@@ -34,7 +34,7 @@ const HomeProjects = () => {
                 </div>
 
                 <div  className="border p-10 m-10  flex flex-col items-center shadow-lg hover:scale-105 duration-500 shadow-gray-500 hover:bg-gray-100 rounded-md">
-                    <div data-aos="flip-right" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out"  className='border w-50 mx-auto rounded-md'>
+                    <div data-aos="flip-left" className='border w-50 mx-auto rounded-md'>
                         <img src={pic3} alt="" />
                     </div>
                     <h2 className='text-xl uppercase my-1 font-semibold'>CHEF CAVE</h2>
@@ -43,7 +43,7 @@ const HomeProjects = () => {
                 </div>
 
                 <div   className="border p-10 m-10  flex flex-col items-center shadow-lg hover:scale-105 duration-500 shadow-gray-500 hover:bg-gray-100 rounded-md">
-                    <div data-aos="flip-left" data-aos-duration="1000" data-aos-mirror="true" data-aos-delay="50" data-aos-easing="ease-in-out" className='border w-50 mx-auto rounded-md'>
+                    <div data-aos="flip-left" className='border w-50 mx-auto rounded-md'>
                         <img src={pic4} alt="" />
                     </div>
                     <h2 className='text-xl uppercase my-1 font-semibold'>DREAM JOB CENTER</h2>
